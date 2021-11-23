@@ -42,14 +42,12 @@
 @media (max-width:991px) {
     .creative {
         height: 600px ;
-        background: url('../../images/1.jpg');
-        background-size: cover;
-        
+       
    
     }
    .creative-info { 
         padding-top: 50px;
-        width: 50%;
+        width: 100%;
     }
     
    .info-dir {
@@ -60,7 +58,7 @@
 }
 @media (max-width:600px) {
     .creative-info { 
-        width: 100%;
+    
         padding-top: 60px;
         position: relative;
         top: 50px;
