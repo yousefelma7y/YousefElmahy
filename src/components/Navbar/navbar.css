@@ -1,0 +1,144 @@
+.navbar {
+    padding: 5px 0;
+   
+    background: #fff;
+   
+    border-bottom: 4px solid #eb5424;
+    height: 90px;
+
+}
+
+ .logo {
+    width: 50%;
+    float: left;
+    margin-left: -50px ;
+}
+.logo-img{
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+ .logo-text{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: -40px;
+}
+ .nav-links {
+   
+    width: 50%;
+    float: left;
+    list-style: none;
+    padding: 0px; 
+    position: relative;
+
+   
+}
+
+ .list-item {
+    display: inline-block;
+}
+
+ .list-item a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+ .list-item a:hover {
+    color: #eb5424
+}
+.nav-button{
+    float: right;
+    width: 60px;
+    height: 60px;
+    border: 0px;
+    font-size: 40px;
+    margin-top: -60px;
+    margin-right: -20px;
+    background-color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.nav-button:hover{
+    color:#eb5424 ;
+}
+.nav-button:active{
+    color:#eb5424 ;
+}
+
+
+
+
+
+
+@media (max-width : 1170px) {  
+    .list-item a{
+        font-size: 15px;
+    }
+}
+@media (max-width : 1130px) {  
+    .list-item a{
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width : 850px) {
+   .logo {
+        width: 100%;
+        float: none;
+    }
+    
+     .nav-links {
+       
+        display: none
+    } 
+    .nav-button{ 
+        display: flex;
+    }
+
+
+    .nav-links-mobile{
+
+        flex-direction: column;
+        position: absolute;
+        top:85px ;
+        right: 0;
+        width: 100%;
+        height: 250px;
+        background-color:white;
+        border-bottom: 4px solid #eb5424;
+        z-index: 9999;
+       
+      
+    }
+    
+    .list-item{
+       text-align: center;
+       width: 100%;
+  
+       
+    }
+    .list-item a {
+        font-size: 15px;
+    }
+   
+   
+}
+@media (max-width : 360px) {  
+
+    .logo-text{
+        font-size: 15px;
+        
+    }
+    .nav-button{ 
+        margin-top: -50px;
+       
+    }
+}

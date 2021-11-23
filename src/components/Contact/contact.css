@@ -1,0 +1,90 @@
+.drop {
+
+    text-align: center;
+    padding: 10px;
+}
+
+.drop .drop-title {
+    font-size: 60px;
+    margin-bottom: 30px
+}
+
+.drop .drop-title span {
+    font-weight: normal
+}
+
+.drop form {
+    width: 70%;
+    margin: auto;
+}
+
+.drop form input {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+.drop form .form-input {
+    overflow: hidden
+}
+
+.drop form .form-input input {
+    width: 49%;
+}
+
+.drop form .form-input input[type=text] {
+    float: left
+}
+
+.drop form .form-input input[type=email] {
+    float: right
+}
+
+
+
+.drop form textarea {
+    width: 100%;
+    outline: 0;
+    background: rgb(243, 240, 240)
+}
+.Question{
+    color:#eb5424 ;
+}
+
+.sendmess {
+    background: #eb5424;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold
+} 
+
+.sendmess:hover {
+    background: #fff;
+    color: #eb5424;
+    border: 1px solid black;
+}
+.sendmess:active {
+    background: #fff;
+    color: #eb5424;
+    border: 1px solid black;
+}
+
+
+@media (max-width:575px) {
+    .drop .drop-title {
+        font-size: 40px
+    }
+    
+    .drop form .form-input input {
+        width: 100%
+    }
+    
+    .drop form {
+        width: 90%
+    }
+}
