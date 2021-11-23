@@ -23,7 +23,7 @@ class Portfolio extends Component {
             
             <div class="box">
                 
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.05}}   whileHover={{y:-5}} 
+                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.05}}   whileHover={{y:-10}} 
                 className="project-container">
                   <img className="projects" alt="project 1" src={image1} />
                     <p class="overlay">
@@ -33,7 +33,7 @@ class Portfolio extends Component {
                     </p>
                 </motion.div>
                 
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.1}}   whileHover={{y:-5}}
+                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.1}}   whileHover={{y:-10}}
                 className="project-container">
                 <img className="projects" alt="project 2" src={image2} />
                     <p class="overlay">
@@ -43,7 +43,7 @@ class Portfolio extends Component {
                     </p>
                 </motion.div>
                 
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.15}}  whileHover={{y:-5}}
+                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.15}}  whileHover={{y:-10}}
                  className="project-container">
                 <img className="projects" alt="project 3" src={image3} />
                     <p class="overlay">
@@ -53,7 +53,7 @@ class Portfolio extends Component {
                     </p>
                 </motion.div>
                 
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.2}}  whileHover={{y:-5}}
+                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.2}}  whileHover={{y:-10}}
                  className="project-container">
                 <img className="projects" alt="project 4" src={image4} />
                     <p class="overlay">

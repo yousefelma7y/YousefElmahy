@@ -45,8 +45,9 @@
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
+   
     color:white ;  
-    border-radius: 40%;
+
     border: 0px;
 }
 .home-btn:hover {
