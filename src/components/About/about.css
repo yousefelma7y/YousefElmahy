@@ -41,7 +41,11 @@
 
 @media (max-width:991px) {
     .creative {
-        height: 600px
+        height: 600px ;
+        /* background: url('../../images/1.jpg');
+        background-size: cover;
+        
+        background-attachment: local ;  */
     }
    .creative-info { 
         padding-top: 50px;
