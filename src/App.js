@@ -1,33 +1,31 @@
 import React  from  'react';
-import { BrowserRouter , Route } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
-import Navbar from './components/Navbar/navbar'
-import Contact from './components/Contact/contact'
-import Index from './components/Index/index'
-import Footer from './components/Footer/Footer'
-import School from './components/smartSchool/school'
-import Iphone from './components/iphone/iphone'
-import ScrollButton from './components/ScrollButton/ScrollButton';
+import Navbar from './components/Navbar/navbar.js';
+import Pages from './components/Pages/pages';
+import Contact from './components/Contact/contact';
+import Footer from './components/Footer/footer';
+
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar/>
-
-        <Route exact path='/' component={Index} /> 
-        <Route  path='/contact' component={Contact} />
-
-        <Route  path='/school' component={School} />
-        <Route  path='/iphone' component={Iphone} />
-        <ScrollButton/>
-      </BrowserRouter> 
-       <Footer/>
+    <>
+     <BrowserRouter>
+       <Navbar/>
+       <Routes>
+          <Route path="/" exact  element={<Pages />} />
        
+          <Route path="/contact" element={<Contact />} />
+          
+        </Routes>
+       <Footer/>
+     </BrowserRouter>
+     
       
-    </div>
+    </>
  
   );
 }

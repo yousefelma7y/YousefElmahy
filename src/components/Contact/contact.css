@@ -1,67 +1,25 @@
-.drop {
-
-    text-align: center;
-    padding: 10px;
+.contact-par{
+    color: #eb5424;
 }
 
-.drop .drop-title {
-    font-size: 60px;
-    margin-bottom: 30px
+.contact-form{
+    padding: 20px;
+    margin-top: 70px;
 }
 
-.drop .drop-title span {
-    font-weight: normal
-}
-
-.drop form {
-    width: 70%;
-    margin: auto;
-}
-
-.drop form input {
-    box-sizing: border-box;
-    outline: 0;
-    padding: 5px;
-    margin-bottom: 10px;
- 
-}
-
-.drop form .form-input {
-    overflow: hidden
-}
-
-.drop form .form-input input {
-    width: 49%;
-}
-
-.drop form .form-input input[type=text] {
-    float: left
-}
-
-.drop form .form-input input[type=email] {
-    float: right
-}
-
-
-
-.drop form textarea {
-    width: 100%;
-    outline: 0;
+ textarea {
     background: rgb(243, 240, 240)
 }
-.Question{
-    color:#eb5424 ;
-}
+
 
 .sendmess {
     background: #eb5424;
     color: #fff;
-    font-size: 18px;
-    width: 150px;
     border: 1px solid black;
-    padding: 15px;
     cursor: pointer;
-    font-weight: bold
+    font-weight: bold;
+    width: 20%;
+    font-size: 13px;
 } 
 
 .sendmess:hover {
@@ -75,17 +33,26 @@
     border: 1px solid black;
 }
 
+@media (max-width:620px) { 
+    .sendmess {
+        width: 40%;
+        font-size: 15px;
+    }
+}
 
-@media (max-width:575px) {
-    .drop .drop-title {
-        font-size: 40px
+@media (max-width:490px) { 
+    .contact-par{
+       font-size: 15px;
     }
-    
-    .drop form .form-input input {
-        width: 100%
+
+}
+@media (max-width:390px) { 
+    .contact-par{
+       font-size: 12px;
     }
-    
-    .drop form {
-        width: 90%
+    .sendmess {
+        width: 40%;
+        font-size: 12px;
     }
+
 }

@@ -1,75 +1,47 @@
-import React , {Component} from  'react';
+import React from 'react'
 import {Link} from 'react-router-dom'
+import { Row } from 'react-bootstrap'
 import './portfolio.css';
-import image1 from '../../images/project 1.png';
-import image2 from '../../images/project 2.png';
-import image3 from '../../images/project 3.png';
-import image4 from '../../images/project 4.png';
 
 import {motion} from 'framer-motion/dist/es/index' ;
 
-class Portfolio extends Component {
-    
-    render() {
+const portfolio = () => {
+  return (
+    <div className="portfolio-page justify-content-center text-center  w-100" id='portfolio'>
+      <motion.h1 initial={{opacity:0 ,y:-50 ,x:-60}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.05}} className='fw-bold pt-5'>
+        My Portfolio
+      </motion.h1>
+      <Row className='justify-content-center mt-5 w-100'>
+      <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.05}}   whileHover={{y:-10}} 
+       className='projects first-proj col-md-3 col-sm-5 col-9 '>
+         <p className="overlay">
+              <button className="show-project" onClick={()=> window.open("https://damanhour-football.netlify.app/", "_blank")}>
+                  Show Project
+              </button>
+          </p>
+        </motion.div>
+        <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.1}}   whileHover={{y:-10}}
+         className='projects secound-proj col-md-3 col-sm-5 col-9'>
+         <p className="overlay ">
+          <button className="show-project" onClick={()=> window.open("https://travelagency711.000webhostapp.com/", "_blank")} >
+                    Show Project
+           </button>
+          </p>
+          </motion.div>
+          <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.15}}  whileHover={{y:-10}}
+           className='projects third-proj col-md-3 col-sm-5 col-9'>
+          <p className="overlay ">
+          <button className="show-project " >
+            <Link className="showimage" to="/school">Show Image</Link>
+           </button>
+          </p>
+          </motion.div>
+        
       
-
-        return(
-            <div id="portfolio" class="portfolio">
-            <motion.h2 initial={{opacity:0 ,y:-50 ,x:-60}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.05}}
-             className="portfolio-title">
-                 <span>My</span>  Portfolio
-             </motion.h2>
-         
-            
-            <div class="box">
-                
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.05}}   whileHover={{y:-10}} 
-                className="project-container">
-                  <img className="projects" alt="project 1" src={image1} />
-                    <p class="overlay">
-                        <button className="show-project" onClick={()=> window.open("https://damanhour-football.netlify.app/", "_blank")}>
-                            Show Project
-                        </button>
-                    </p>
-                </motion.div>
-                
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.1}}   whileHover={{y:-10}}
-                className="project-container">
-                <img className="projects" alt="project 2" src={image2} />
-                    <p class="overlay">
-                    <button className="show-project" onClick={()=> window.open("https://travelagency711.000webhostapp.com/", "_blank")} >
-                              Show Project
-                        </button>
-                    </p>
-                </motion.div>
-                
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.15}}  whileHover={{y:-10}}
-                 className="project-container">
-                <img className="projects" alt="project 3" src={image3} />
-                    <p class="overlay">
-                    <button className="show-project" >
-                      <Link className="showimage" to="/school">Show Image</Link>
-                        </button>
-                    </p>
-                </motion.div>
-                
-                <motion.div initial={{opacity:0 ,y:-50 ,x:-50}} animate={{opacity:1 ,y:0 ,x:0 }} transition={{delay:0.2}}  whileHover={{y:-10}}
-                 className="project-container">
-                <img className="projects" alt="project 4" src={image4} />
-                    <p class="overlay">
-                    <button className="show-project" >
-                      <Link className="showimage" to="/iphone">Show Image</Link>
-                    </button>
-                    </p>
-                </motion.div>
-                
-               
-                
-            </div>
-            
-        </div>
-        )
-    }
+      </Row>
+     
+    </div>
+  )
 }
 
-export default Portfolio ;
+export default portfolio

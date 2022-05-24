@@ -1,84 +1,38 @@
-import React  from  'react';
+import React from 'react'
+import { Row } from 'react-bootstrap';
 import {motion} from 'framer-motion/dist/es/index' ;
-import './work.css';
 
-// import {useEffect}  from 'react';
-// import { useInView } from 'react-intersection-observer';
-// import {useAnimation}  from 'framer-motion';
+import './work.css' ;
 
-const Work  =() => {
-
-    // const {ref , inView} = useInView({
-    //     threshold:1
-    // });
-  
-    // const body1 = useAnimation();
-    // const body2 = useAnimation();
-
-    // useEffect(() => {
-    //     console.log("use effect hook , inView = ", inView) ;
-    //      if(inView){
-            
-    //         body1.start({
-                
+const work = () => {
+  return (
+   <div className='mt-5 ' id='work'>
+     <h1 className='work-header '>
+       My <span className='fw-bold '>Work</span>
+     </h1>
+     <Row className='p-5 w-100 justify-content-center'>
+     <motion.div    whileHover={{scale:1.1}}  className='work-card col-xl-5 col-sm-8  text-center m-5'>
+          <h2 className='work-title'>
+            Front End
+          </h2>
+          <hr></hr>
+          <p className='text-secondary'>
+          Trained at ITI company for 2 months as a Front End developer .
+          </p>
+          </motion.div>
+      <motion.div  whileHover={{scale:1.1}}  className='work-card col-xl-5 col-sm-8  text-center m-5 '>
+          <h2 className='work-title'>
+          Freelance
+          </h2>
+          <hr></hr>
+          <p className='text-secondary'>
+          Worked as a freelancer in many projects.
+          </p>
+          </motion.div>
+     </Row>
     
-    //             x: 0 ,
-    //             transition:{delay:0.15} 
-    //           });
-
-    //           body2.start({
-               
-    //             x:0 ,
-    //             transition:{delay:0.15}         
-    //           });
-           
-
-    //      }
-    //      if(!inView){
-           
-    //         body1.start({
-              
-    //             x: -30     
-    //           });
-
-    //           body2.start({
-                
-    //             x: 30           
-    //           });
-    //      }
-    // },[inView]);
-
-        return(
-            <div  id="work" data-aos="fade-up"  className="work">
-            <div  className="container">
-                <motion.h2 
-                 className="work-title"><span>My</span> Work</motion.h2>
-
-                <motion.div    whileHover={{scale:1.1}} 
-                className="part first">
-                    <i className="icon fa fa-chain fa-2x"></i>
-                    <h4 className="part-title">Front End</h4>
-                    <hr className="line"/>
-                    <p className="part-desc">
-                    Trained at ITI company for 2 months as a Front End developer .
-                    </p>
-                </motion.div>
-                
-                <motion.div  whileHover={{scale:1.1}} 
-                className="part">
-                    <i className="icon fa fa-bolt fa-2x"></i>
-                    <h4 className="part-title">Freelance</h4>
-                    <hr className="line"/>
-                    <p className="part-desc">
-                    Worked as a freelancer in many projects.
-                    </p>
-                </motion.div>
-                
-         
-            </div>
-        </div>
-        )
-    
+   </div>
+  )
 }
 
-export default Work ;
+export default work

@@ -1,112 +1,99 @@
-import React , {Component} from 'react';
+import React from 'react';
+import { Row } from 'react-bootstrap';
 import {motion} from 'framer-motion/dist/es/index' ;
 
-import './Profile.css'
+import './profile.css';
 
-class Profile extends Component {
-    render() {
-        return(
-            <div id="resume" className="profile_skills">
-            <div className="container">
-                <div className="profile">
-                    <motion.h2 initial={{opacity:0 ,y:-150 }} animate={{opacity:1 ,y:0}} transition={{delay:0.1}} 
-                     className="profile-title"><span>My </span>Profile</motion.h2>
-
-                    <ul className="profile-list">
-                        <motion.li initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.2}} 
-                        className="profile-item">
-                            <span>Name</span>
-                           Yousef Elmahy
-                        </motion.li>
-                        <motion.li initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.3}} 
-                         className="profile-item">
-                            <span>Birthday</span>
-                            7/11/2000
-                        </motion.li>
-                        <motion.li initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.4}} 
-                        className="profile-item">
-                            <span>Address</span>
-                            Damanhour
-                        </motion.li>
-                        <motion.li initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.5}} 
-                         className="profile-item">
-                            <span>Phone</span>
-                            01022361568
-                        </motion.li>
-                        <motion.li initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.6}} 
-                        className="profile-item">
-                            <span>Email</span>
-                            <span className="web">yousefelmahy7112000@gmail.com</span>
-                        </motion.li>
-                     
-                    </ul>
-                </div>
-                
-                <div className="skills">
-                    <motion.h2 initial={{opacity:0 ,y:-150 }} animate={{opacity:1 ,y:0}} transition={{delay:0.1}} 
-                     className="skills-title">Some <span>skills</span></motion.h2>
-                    
-                    <motion.div initial={{opacity:0 ,x:150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.2}} 
-                    className="bar">
-                        <span className="title">HTML</span>
-                        <span className="perc">90%</span>
-                        <div className="parent">
-                            <span className="sp1"></span>
-                        </div>
-                    </motion.div>
-                    
-                    <motion.div initial={{opacity:0 ,x:150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.3}} 
-                     className="bar">
-                        <span className="title">CSS</span>
-                        <span className="perc">75%</span>
-                        <div className="parent">
-                            <span className="sp2"></span>
-                        </div>
-                    </motion.div>
-                    
-                    <motion.div initial={{opacity:0 ,x:150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.4}} 
-                     className="bar">
-                        <span className="title">JavaScript</span>
-                        <span className="perc">70%</span>
-                        <div className="parent">
-                            <span className="sp3"></span>
-                        </div>
-                    </motion.div>
-
-
-                    <motion.div  initial={{opacity:0 ,x:150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.5}} 
-                    className="bar">
-                        <span className="title">React.js</span>
-                        <span className="perc">75%</span>
-                        <div className="parent">
-                            <span className="sp4"></span>
-                        </div>
-                    </motion.div>
-
-                    <motion.div initial={{opacity:0 ,x:150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.6}} 
-                    className="bar">
-                        <span className="title">Node.js</span>
-                        <span className="perc">10%</span>
-                        <div className="parent">
-                            <span className="sp5"></span>
-                        </div>
-                    </motion.div>
-
-                    <motion.div initial={{opacity:0 ,x:150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.7}} 
-                     className="bar">
-                        <span className="title">MongoDB</span>
-                        <span className="perc">10%</span>
-                        <div className="parent">
-                            <span className="sp6"></span>
-                        </div>
-                    </motion.div>
-                </div>
-                
-            </div>
-        </div>
-        )
+const profile = () => {
+  return (
+    <Row className='w-100 justify-content-center' id='resume'>
+      <div className='col-md-5 col-12  '>
+         <motion.h1 initial={{opacity:0 ,y:-150 }} animate={{opacity:1 ,y:0}} transition={{delay:0.1}} 
+          className='p-5'>
+          My <span className='fw-bold'>Profile</span>
+          </motion.h1>
+        <div className='profile-list m-5'>
+           
+           <motion.div initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.2}} 
+             className='profile-items row '>
+            <span className='col-xl-3 col-6 fw-bold'>Name  </span>
+            <span className='col-xl-4 col-6'> Yousef Elmahy  </span>
+            </motion.div>
+            <motion.div initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.3}} 
+             className='profile-items row'>
+            <span className='col-xl-3 col-6 fw-bold'>Birthday</span>
+            <span className='col-xl-3 col-6'>7/11/2000  </span>
+            </motion.div>
+            <motion.div initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.4}} 
+             className='profile-items row'>
+            <span className='col-xl-3 col-6 fw-bold'>Address</span>
+            <span className='col-xl-3 col-6'> Damanhour  </span>
+            </motion.div>
+            <motion.div initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.5}} 
+            className='profile-items row'>
+            <span className='col-xl-3 col-6 fw-bold'>Phone</span>
+            <span className='col-xl-3 col-6'>01022361568 </span>
+            </motion.div>
+            <motion.div initial={{opacity:0 ,x:-150 }} animate={{opacity:1 ,x:0}} transition={{delay:0.6}} 
+             className='profile-items row'>
+            <span className='col-xl-3 col-6 fw-bold'>Email</span>
+            <span className='col-xl-3 col-sm-6  email'> yousefelmahy7112000@gmail.com </span>
+            </motion.div>
+           
     
-    }
+       </div>
+      </div>
+      <div className='col-md-5 col-12 p-5 m-5'>
+         
+         <motion.h1 initial={{opacity:0 ,y:-150 }} animate={{opacity:1 ,y:0}} transition={{delay:0.1}} >
+         <span className='fw-bold'> Some </span> Skills
+         </motion.h1>
+
+         <Row    className=" profile-skills ">
+            <span className="col-6 p-3">HTML</span>
+            <span className="col-6 p-3 text-center">90%</span>
+            <div className="parent col-12">
+                <span className="sp1"></span>
+            </div>
+         </Row>
+         <Row  className="profile-skills">
+            <span className="col-6 p-3">CSS</span>
+            <span className="col-6 p-3 text-center">75%</span>
+            <div className="parent col-12">
+                <span className="sp2"></span>
+            </div>
+         </Row>
+         <Row  className="profile-skills">
+            <span className="col-6  p-3">JavaScript</span>
+            <span className="col-6  p-3 text-center">70%</span>
+            <div className="parent col-12">
+                <span className="sp3"></span>
+            </div>
+         </Row>
+         <Row  className="profile-skills">
+            <span className="col-6  p-3">React.js</span>
+            <span className="col-6  p-3 text-center">75%</span>
+            <div className="parent col-12">
+                <span className="sp4"></span>
+            </div>
+         </Row>
+         <Row  className="profile-skills">
+            <span className="col-6 p-3">Node.js</span>
+            <span className="col-6  p-3 text-center">10%</span>
+            <div className="parent col-12">
+                <span className="sp5"></span>
+            </div>
+         </Row>
+         <Row  className="profile-skills">
+            <span className="col-6  p-3">MongoDB </span>
+            <span className="col-6  p-3 text-center">10%</span>
+            <div className="parent col-12">
+                <span className="sp6"></span>
+            </div>
+         </Row>
+      </div>
+    </Row>
+  )
 }
 
-export default Profile ;
+export default profile
